@@ -1,0 +1,42 @@
+﻿
+.body {
+    margin:0;
+    background: red;
+    overflow-x:hidden;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(Rotation=3);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.rounded_corners
+    {
+        border: 1px solid #A1DCF2;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .rounded_corners td, .rounded_corners th
+    {
+        border: 1px solid #A1DCF2;
+        font-family: Arial;
+        font-size: 10pt;
+        text-align: center;
+    }
+    .rounded_corners table table td
+    {
+        border-style: none;
+    }
+    .pane.stretch {
+    width:0%;
+    width:calc(60% + 10px);
+    padding-left:40px;
+    padding-right:40px;
+}
+.pane.stretch .field {
+    width:50%;
+    margin:0;
+    overflow:visible;
+}
+.pane.stretch .field label {
+    width:50%;
+    border:1px solid #ccc;
+}

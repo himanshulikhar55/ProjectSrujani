@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="layout.master.cs" Inherits="Master_layout" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Welcome to Srujani Portal</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            background-color:navy;
+            height: 50px;
+            width:140px;
+            text-transform:uppercase;
+            font-size:16px;
+            line-height:48px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager runat="server" ID="BaseScriptManager" EnablePartialRendering="true"></asp:ScriptManager>
+        <div class="header">
+            <div class="banner">
+                <div class="logo">
+                    <asp:Image ImageUrl="../images/sail-logo.png" runat="server"/>
+                </div>
+                <span>Rourkela Steel Plant</span>
+            </div>
+            <div class="headline">
+                <asp:Panel runat="server" ID="Designation">
+                <div class="auto-style1" runat="server">
+                        <asp:Label runat="server" Text="Coordinator" ID="UserDesignation" />
+                    </div>
+                    </asp:Panel>
+                <span>Welcome to the Srujani Portal of RSP</span>
+                <asp:Panel ID="UserDetails" CssClass="user" runat="server">
+                    <div class="aboutUser">
+                        <asp:Label runat="server" Text="asdasd" ID="UserName"/>
+                    </div>
+                    
+                    <asp:Button runat="server" ID="logoutButton" Text="Logout" OnClick="DestroySession" />
+                <asp:Button runat="server" ID="BackButton" Text="Back"/>
+                </asp:Panel>
+            </div>
+        </div>
+        <div class="content">
+            <asp:ContentPlaceHolder ID="mainContentPlaceholder" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <asp:UpdatePanel ID="DialogBoxPanel" runat="server" UpdateMode="Conditional">
+            <ContentTemplate>
+                <asp:Panel Visible="False" ID="DialogBox" runat="server">
+                    <div class="fore">
+                        <asp:Label CssClass="title" ID="DialogTitle" runat="server" Text="Error"></asp:Label>
+                        <asp:Label CssClass="message" ID="DialogMessage" runat="server" ForeColor="Red"></asp:Label>
+                        <asp:Button runat="server" ID="DialogOKButton" AutoPostBack="true" CssClass="OK" TabIndex="1" OnClientClick="this.parentNode.style.display='none';" OnClick="CloseDialogBox" Text="OK" UseSubmitBehavior="False" />
+                    </div>
+                    
+                </asp:Panel>
+            </ContentTemplate>
+            <Triggers>
+                <asp:AsyncPostBackTrigger ControlID="DialogOKButton" />
+            </Triggers>
+        </asp:UpdatePanel>
+        <div class="footer">
+            Site developed and maintained by C &amp; IT Department.
+        </div>
+        
+    </form>
+</body>
+</html>

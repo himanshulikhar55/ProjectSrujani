@@ -1,0 +1,32 @@
+﻿.pane {
+    width:30%;
+    vertical-align:top;
+}
+.pane.disabled {
+    display:none;
+}
+.formview table, .formview tbody, .formview td,.formview tr {
+    width:100%;
+    text-align:center;
+}
+.formview .field {
+    margin-bottom:1em;
+}
+.field.checkbox > label, .field.stretch > label {
+    border-right:1px solid #ccc;
+}
+.field.stretch > label {
+    width:100%;
+}
+textarea {
+    box-sizing:border-box;
+}
+input[type="checkbox"] {
+    margin:0;
+    margin-left:100px;
+    width:20px;
+    background:transparent;
+}
+.empty {
+    color: #666;
+}

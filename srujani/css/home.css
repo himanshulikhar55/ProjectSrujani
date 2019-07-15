@@ -1,0 +1,20 @@
+﻿.wrapper .pane {
+   width: 30%;
+}
+.wrapper .pane > div > .title {
+    font-size:30px;
+    color:#3651ce;
+    display:block;
+    line-height:2;
+    text-align:center;
+}
+.wrapper .pane > div > .subtitle {
+    display:block;
+    text-align:center;
+    color:#555;
+    font-weight:bolder;
+    border-bottom:1px solid #ccc;
+    padding:1em 0px 2em 0px;
+    margin-bottom:2em;
+}
+

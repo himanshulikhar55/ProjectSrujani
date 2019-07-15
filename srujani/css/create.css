@@ -1,0 +1,43 @@
+﻿.wrapper .pane {
+    width:32%;
+    margin:5px;
+    padding-bottom:0px;
+}
+.wrapper table, .wrapper td, .wrapper tr, .wrapper tbody {
+    width:100%;
+    display:block;
+    text-align:center;
+    font-size:0;
+}
+.pane.stretch {
+    width:97.5%;
+    padding-left:40px;
+    padding-right:40px;
+}
+.pane.stretch .field {
+    width:100%;
+    margin:0;
+    overflow:visible;
+}
+.pane.stretch .field label {
+    width:100%;
+    border:1px solid #ccc;
+}
+.pane.stretch textarea {
+    min-height:0em;
+}
+.actions {
+    width:100%;
+    text-align:center;
+    font-size:initial;
+    margin-top:10px;
+}
+.wrapper .actions .button {
+    font-size:0.9em;
+    display:inline-block;
+    margin:0px 20px;
+}
+.Meta {
+    font-weight:900;
+    color:#444 !important;
+}

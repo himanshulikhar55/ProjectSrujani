@@ -1,0 +1,77 @@
+﻿@media print, screen
+{
+    .pane {
+        width:100%;
+        margin:0px;
+        padding-bottom:10px;
+    }
+    .field {
+        display:inline-block;
+        width:15%;
+        margin:0 2%;
+    }
+    .form .button, .form input[type="submit"], .form button {
+        display:inline-block;
+        vertical-align:top;
+        height:40px;
+        line-height:40px;
+        margin:0 2%;
+    }
+    .field input, .field select {
+        width:100%;
+        border:1px solid #ccc;
+    }
+    table {
+        width:100%;
+        font-size:0.8em;
+        border-color:#ccc;
+    }
+    th {
+        height: 2em;
+        background:#fafafa;
+        white-space:pre-wrap;
+    }
+    th a {
+        text-decoration:none;
+        color:#666;
+        font-size:1.1em;
+    }
+    th a:hover {
+        color:#12219d;
+    }
+    tr:not(:first-child):hover {
+        background:#f0f0f0;
+    }
+    td {
+        font-family:sans-serif;
+        position:relative;
+        padding:10px 0px;
+    }
+    td span {
+        display:block;
+        width:100%;
+        height:100%;
+    }
+    .limitWidth {
+    
+        word-break:break-all;
+        max-width: 150px;
+        display:block;
+        text-align:center;
+        margin:0 auto;
+        position:relative;
+    }
+    .stretch {
+        position:relative;
+        width:100%;
+        display:flex;
+        box-sizing:border-box;
+        padding:20px 0px;
+        display:block;
+        text-align:right;
+    }
+    .stretch .print {
+        display:inline-block;
+        background:#0026ff;
+    }
+}
